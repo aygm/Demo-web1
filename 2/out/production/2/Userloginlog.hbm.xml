@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.Userloginlog" table="userloginlog" schema="bagevent_test">
+        <id name="loginId">
+            <column name="login_id" sql-type="int(11)"/>
+        </id>
+        <property name="userId">
+            <column name="user_id" sql-type="int(11)"/>
+        </property>
+        <property name="loginTime">
+            <column name="login_time" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="loginIp">
+            <column name="login_ip" sql-type="int(10)"/>
+        </property>
+    </class>
+</hibernate-mapping>
